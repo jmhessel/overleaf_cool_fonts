@@ -1,5 +1,5 @@
 # How do you make cool fonts work with pdflatex in overleaf?
-`
+
 1. find `T1-WGL4.enc`. This can be got as `wget http://tug.ctan.org/fonts/verdana/T1-WGL4.enc`
 2. Find the ttf font you want. https://tug.org/FontCatalogue/imfellenglish/ is a good start. Google around for the ttf. you can also do this to convert otf to ttf: `fontforge -lang=ff -c 'Open($1); Generate($2); Close();' font.otf font.ttf`
 3. Run `ttf2tfm -p T1-WGL4.enc [fontname].ttf`
