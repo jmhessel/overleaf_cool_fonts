@@ -1,6 +1,6 @@
 # How do you make cool fonts work with pdflatex in overleaf?
 
-1. Find the ttf font you want. https://tug.org/FontCatalogue/imfellenglish/ is a good start. Google around for the ttf.
+1. Find the ttf font you want. https://tug.org/FontCatalogue/imfellenglish/ is a good start. Google around for the ttf. you can also do this to convert otf to ttf: `fontforge -lang=ff -c 'Open($1); Generate($2); Close();' font.otf font.ttf`
 2. Run `ttf2tfm [your ttf file here]`
 3. Make a ".fd" file. Here's an example:
 
