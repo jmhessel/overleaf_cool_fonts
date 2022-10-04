@@ -18,7 +18,7 @@ Then, in your overleaf, you include
 
 1. [fontname].ttf
 2. [fontname].tfm
-3. [fontname].fd
+3. t1[fontname].fd   (yes, you need the t1 there...)
 
 then you can use, e.g., as:
 
